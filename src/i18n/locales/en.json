@@ -10,5 +10,14 @@
     "active": "Active",
     "inactive": "Inactive",
     "provider": "Provider"
+  },
+  "search": {
+    "region": "Region",
+    "status": "Status",
+    "searchButton": "Search",
+    "allRegions": "All",
+    "status_all": "All",
+    "status_active": "Active",
+    "status_inactive": "Inactive"
   }
 }
