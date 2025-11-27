@@ -1,0 +1,15 @@
+:root {
+  --font-main: "Inter", sans-serif;
+
+  --font-size-title-lg: 40px;
+  --font-size-title-md: 32px;
+  --font-size-title-sm: 24px;
+
+  --font-size-body-lg: 18px;
+  --font-size-body-md: 16px;
+  --font-size-body-sm: 14px;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+}

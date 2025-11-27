@@ -1,0 +1,45 @@
+:root {
+  /* MAIN COLORS */
+  --color-main-yellow: #FFCD00;
+  --color-main-black: #262626;
+  --color-main-white: #FFFFFF;
+  --color-main-gray: #F3F3F3;
+
+  /* SUPPORTIVE COLORS - MAIN */
+  --color-iris-main: #6D5BF7;
+  --color-violet-main: #2C1036;
+  --color-spring-main: #25EF89;
+  --color-coral-main: #FF5C6C;
+
+  /* SUPPORTIVE YELLOWS - SUB */
+  --color-taxi-y-1: #FFFAE6;
+  --color-taxi-y-2: #FFF0B0;
+  --color-taxi-y-3: #FFE88A;
+  --color-taxi-y-4: #FFDE54;
+
+  --color-lemon-1: #FFFFE6;
+  --color-lemon-2: #FFFEB0;
+  --color-lemon-3: #FFFD8A;
+  --color-lemon-4: #FFFB00;
+
+  /* SUPPORTIVE GRAYS - SUB */
+  --color-gray-mid-1: #FBFBFB;
+  --color-gray-mid-2: #F9F9F9;
+  --color-gray-mid-3: #F5F5F5;
+  --color-gray-dark-1: #DDDDDD;
+  --color-gray-dark-2: #868686;
+  --color-gray-dark-3: #666666;
+  --color-gray-dark-4: #ADADAD;
+
+  /* SUPPORTIVE COLORS - SUB */
+  --color-iris-1: #F0EFFE;
+  --color-iris-2: #BCB4FB;
+  --color-violet-1: #EAE7EB;
+  --color-violet-2: #9F8EA3;
+  
+  --color-spring-1: #E9FDF3;
+  --color-spring-2: #9BF8C9;
+
+  --color-coral-1: #FFEFF0;
+  --color-coral-2: #FFCCD1;
+}
