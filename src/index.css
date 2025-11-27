@@ -116,7 +116,71 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
+    font-family: var(--font-main);
+    font-size: var(--font-size-body-md);
+    line-height: var(--leading-normal);
     @apply bg-background text-foreground;
+  }
+
+  h1 {
+    font-size: var(--font-size-title-lg);
+    line-height: var(--leading-tight);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: var(--font-size-title-md);
+    line-height: var(--leading-tight);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: var(--font-size-title-sm);
+    line-height: var(--leading-tight);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: var(--font-size-body-md);
+    line-height: var(--leading-normal);
+  }
+
+  small {
+    font-size: var(--font-size-body-sm);
+    line-height: var(--leading-normal);
+  }
+}
+
+@layer utilities {
+  .text-title-lg {
+    font-size: var(--font-size-title-lg);
+    line-height: var(--leading-tight);
+  }
+
+  .text-title-md {
+    font-size: var(--font-size-title-md);
+    line-height: var(--leading-tight);
+  }
+
+  .text-title-sm {
+    font-size: var(--font-size-title-sm);
+    line-height: var(--leading-tight);
+  }
+
+  .text-body-lg {
+    font-size: var(--font-size-body-lg);
+    line-height: var(--leading-normal);
+  }
+
+  .text-body-md {
+    font-size: var(--font-size-body-md);
+    line-height: var(--leading-normal);
+  }
+
+  .text-body-sm {
+    font-size: var(--font-size-body-sm);
+    line-height: var(--leading-normal);
   }
 }

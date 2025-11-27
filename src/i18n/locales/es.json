@@ -2,5 +2,13 @@
   "header": {
     "title": "Micromarkets",
     "hello": "Hola"
+  },
+  "sidebar": {
+    "title": "Mercados",
+    "count": "{{count}} micromercados",
+    "noResults": "No se encontraron mercados",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "provider": "Proveedor"
   }
 }
