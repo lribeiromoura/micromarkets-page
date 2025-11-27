@@ -1,8 +1,10 @@
 import { lazy, Suspense } from "react";
 import type { Micromarket } from "@/types/Micromarkets";
 import { Skeleton } from "../ui/skeleton";
+
 const MicromarketForm = lazy(() => import("@/components/form"));
-const FormActions = lazy(() => import("@/components/form-actions")); 
+const FormActions = lazy(() => import("@/components/form-actions"));
+const MicromarketAssetsTable = lazy(() => import("@/components/assets-table"));
 
 type FormRootProps = {
   selectedId: string | null;
@@ -24,7 +26,12 @@ export const FormRoot = ({
         />
         <MicromarketForm
           form={filteredMicromarkets.find((m) => m.id === selectedId) || null}
-        /> 
+        />
+        <MicromarketAssetsTable
+          assets={
+            filteredMicromarkets.find((m) => m.id === selectedId)?.assets || []
+          }
+        />
       </Suspense>
     </>
   );
