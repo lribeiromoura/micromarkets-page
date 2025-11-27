@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 
 import { SidebarRoot } from "@/components/sidebar/root";
 import MicromarketSearchBar from "@/components/search-bar";
+import { FormRoot } from "@/components/form/root";
+import MicromarketsNotFound from "@/components/micromarkets-not-found";
 import type { MicromarketFilters } from "@/types/Micromarkets";
 
 const MicromarketPage = () => {
@@ -58,7 +60,16 @@ const MicromarketPage = () => {
           setOpenDrawer={setOpenDrawer}
         />
 
-        <main className="flex-1 overflow-auto px-2 pb-10 lg:px-6 bg-gray-50"></main>
+        <main className="flex-1 overflow-auto px-2 pb-10 lg:px-6 bg-gray-50">
+          {selectedId ? (
+            <FormRoot
+              selectedId={selectedId}
+              filteredMicromarkets={filteredMicromarkets}
+            />
+          ) : (
+            <MicromarketsNotFound micromarkets={filteredMicromarkets} />
+          )}
+        </main>
 
         <Button
           type="button"

@@ -1,3 +1,4 @@
+@import "./styles/fonts.css";
 @import "tailwindcss";
 @import "./styles/variables.css";
 @import "./styles/typography.css";
@@ -156,6 +157,7 @@
     font-size: var(--font-size-body-md);
     line-height: var(--leading-normal);
     @apply bg-background text-foreground;
+    font-family: var(--font-main);
   }
 
   h1 {
