@@ -49,5 +49,22 @@
     "logs": "Registros",
     "export": "Exportar dispositivos a Excel",
     "save": "Guardar información"
+  },
+  "assets": {
+    "title": "Activos del punto de venta",
+    "grid": {
+      "assetNumber": "Activo #",
+      "kioskId": "ID de kiosco",
+      "serialNumber": "Serie #",
+      "category": "Categoría",
+      "model": "Modelo",
+      "active": "Activo",
+      "isCash": "¿Es efectivo?"
+    },
+    "select": {
+      "placeholder": "Seleccionar activo...",
+      "new": "Nuevo activo..."
+    },
+    "addButton": "Agregar activo"
   }
 }

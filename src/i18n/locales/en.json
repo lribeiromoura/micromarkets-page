@@ -49,5 +49,22 @@
     "logs": "Logs",
     "export": "Export Devices To Excel",
     "save": "Save Information"
+  },
+  "assets": {
+    "title": "Point of sale assets",
+    "grid": {
+      "assetNumber": "Asset #",
+      "kioskId": "Kiosk Id",
+      "serialNumber": "Serial #",
+      "category": "Category",
+      "model": "Model",
+      "active": "Active",
+      "isCash": "Is Cash?"
+    },
+    "select": {
+      "placeholder": "Select asset...",
+      "new": "New asset..."
+    },
+    "addButton": "Add asset"
   }
 }
