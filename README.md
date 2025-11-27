@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+# Micromarkets Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a technical frontend implementation of a Micromarkets Portal built with modern web technologies, focusing on scalability, performance, maintainability, and user experience.
 
-Currently, two official plugins are available:
+The application simulates micromarkets, allowing users to filter, select, and view detailed information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Vite – Fast build and development environment  
+- React + TypeScript – Component-based architecture with strong typing  
+- Tailwind CSS – Utility-first styling  
+- shadcn/ui – Accessible, production-ready UI components  
+- i18next – Internationalization (English & Spanish)  
+- Ignite UI (Infragistics) – Data grid and enterprise components  
+- Lucide Icons  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📐 Layout & UX Decisions
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The layout was intentionally designed to stay as close as possible to the original legacy system, while still introducing a more modern and clean visual approach.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This decision was based on my personal experience with user resistance to drastic UI changes, especially in enterprise environments.
+I have personally gone through the migration of a large legacy system from AngularJS to React, and one of the biggest challenges was not technical — it was user adaptation.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+For that reason, the layout keeps:
+
+- A persistent sidebar  
+- A top search/filter bar  
+- A focused main content area  
+
+This minimizes the learning curve and reduces friction during adoption.
+
+---
+
+## 📝 Forms & Validation
+
+For a real-world, production-ready version, the application would use:
+
+- **React Hook Form** for:
+  - High performance  
+  - Reduced re-renders  
+  - Scalable form state management  
+
+- **Zod** for:
+  - Strong schema validation  
+  - Clear error handling  
+  - Type-safe form validation  
+
+This setup ensures maintainability, predictability, and robustness.
+
+---
+
+## 🎨 Design System Consideration
+
+For a final enterprise-grade version, I would recommend considering Microsoft Fluent UI as the Design System.
+
+Fluent provides:
+
+- Native Windows look & feel  
+- High accessibility standards  
+- Visual familiarity for corporate users  
+- Lower resistance during UI modernization  
+
+This makes the user experience more uniform and intuitive, especially for companies already working inside the Microsoft ecosystem.
+
+**I personally prefer using shadcn/ui to build web applications, but this Design System could be more comfortable for users coming from a .NET platform.**
+
+---
+
+## 🌍 Internationalization (i18n)
+
+The project supports:
+
+- English  
+- Spanish  
+
+Language switching is handled via i18next, preparing the application for international expansion.
+
+---
+
+## 📂 Project Setup
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Build for production:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+---
+
+## ✅ Key Architectural Goals
+
+- Clean and scalable architecture  
+- Strong typing with TypeScript  
+- Decoupled UI components  
+- Performance-first mindset  
+- Real-world enterprise UX decision
