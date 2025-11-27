@@ -19,5 +19,35 @@
     "status_all": "Todos",
     "status_active": "Activos",
     "status_inactive": "Inactivos"
+  },
+  "form": {
+    "empty": "Seleccione un mercado para ver los detalles.",
+    "active": "Activo",
+    "cannotChange": "(No se puede modificar)",
+    "marketNumber": "Número de Mercado",
+    "mgmtNumber": "Número de Gestión",
+    "account": "Cuenta",
+    "location": "Ubicación",
+    "provider": "Proveedor",
+    "providerConfig": "Configuración del Proveedor",
+    "creditCardFeeAmount": "Tarifa de tarjeta de crédito $:",
+    "creditCardFeePercent": "Tarifa de tarjeta de crédito %:",
+    "applyFeeToTopUps": "Aplicar tarifa a recargas de cuenta:",
+    "hasPriceTags": "Tiene etiquetas de precio:",
+    "lastVdiMarketPush": "Último envío de mercado VDI:",
+    "lastVdiProductPush": "Último envío de producto VDI:",
+    "lastVdiSaleReceived": "Última venta VDI recibida:",
+    "vdiProductsInQueue": "Productos VDI en cola:",
+    "showQueue": "Ver cola"
+  },
+  "actions": {
+    "actions": "Acciones",
+    "reset": "Restablecer",
+    "delete": "Eliminar",
+    "info": "Información",
+    "details": "Detalles",
+    "logs": "Registros",
+    "export": "Exportar dispositivos a Excel",
+    "save": "Guardar información"
   }
 }

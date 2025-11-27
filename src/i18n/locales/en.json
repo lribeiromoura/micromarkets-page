@@ -19,5 +19,35 @@
     "status_all": "All",
     "status_active": "Active",
     "status_inactive": "Inactive"
+  },
+  "form": {
+    "empty": "Select a market to view details.",
+    "active": "Active",
+    "cannotChange": "(Cannot be changed)",
+    "marketNumber": "Market Number",
+    "mgmtNumber": "Mgmt Number",
+    "account": "Account",
+    "location": "Location",
+    "provider": "Provider",
+    "providerConfig": "Provider config",
+    "creditCardFeeAmount": "Credit card fee $:",
+    "creditCardFeePercent": "Credit card fee %:",
+    "applyFeeToTopUps": "Apply fee to account top-ups:",
+    "hasPriceTags": "Has price tags:",
+    "lastVdiMarketPush": "Last VDI market push:",
+    "lastVdiProductPush": "Last VDI product push:",
+    "lastVdiSaleReceived": "Last VDI sale received:",
+    "vdiProductsInQueue": "VDI products in queue:",
+    "showQueue": "Show queue"
+  },
+  "actions": {
+    "actions": "Actions",
+    "reset": "Reset",
+    "delete": "Delete",
+    "info": "Info",
+    "details": "Details",
+    "logs": "Logs",
+    "export": "Export Devices To Excel",
+    "save": "Save Information"
   }
 }
